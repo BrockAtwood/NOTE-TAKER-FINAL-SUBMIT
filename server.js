@@ -38,7 +38,7 @@ app.get("/", (req, res) => {
 app.get("/api/notes", (req, res) => {
   console.log(`${req.method} request received to get notes`);
 
-  readFromFile(termData).then((data) => res.json(JSON.parse(data)));
+  readFromFile("./db/db.json").then((data) => res.json(JSON.parse(data)));
 });
 
 //activity #20: write to a file for writeFile updated notes
@@ -49,8 +49,8 @@ const writeToFile = (destination, note) => {
 };
 
 //obtain and read data and append new note(s)
-const append = (content, termData) => {
-  fs.readFile(termData, "utf8", (err, data) => {
+const append = (content, file) => {
+  fs.readFile(file, "utf8", (err, data) => {
     if (err) {
       throw err;
     } else {
@@ -59,7 +59,7 @@ const append = (content, termData) => {
       //add new note
       note.push(content);
       //write updated notes back to the file
-      writeToFile(termData, note);
+      writeToFile(file, note);
     }
   });
 };
@@ -78,7 +78,7 @@ app.post("/api/notes", (req, res) => {
       id: uuid(),
     };
     //adds new note to db
-    append(newNote, termData);
+    append(newNote, "./db/db.json");
     //activity #20
     const response = {
       status: "Well Done!",
