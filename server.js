@@ -91,7 +91,8 @@ app.post("/api/notes", (req, res) => {
 });
 
 //app for deleting a note
-app.delete("/api/notes/:id", (req, res) => {});
+//RAN OUT OF TIME!!!
+// app.delete("/api/notes/:id", (req, res) => {});
 
 //app listener for connection
 app.listen(PORT, () => {
