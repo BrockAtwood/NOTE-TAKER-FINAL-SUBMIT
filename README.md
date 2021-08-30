@@ -31,7 +31,13 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 ```
 
 ## ScreenShots
+![Screen Shot 2021-08-30 at 2 53 30 PM](https://user-images.githubusercontent.com/87385012/131409899-40a8ea5e-d515-460d-92df-815ac52b0810.png)
+<img width="672" alt="Screen Shot 2021-08-30 at 3 01 43 PM" src="https://user-images.githubusercontent.com/87385012/131409909-3fc1dafc-1d21-4959-94ba-1d79a6ebe110.png">
+![Screen Shot 2021-08-30 at 3 01 54 PM](https://user-images.githubusercontent.com/87385012/131409921-1999cd9f-671e-468d-ba91-5fa92b3b00cf.png)
 
-## Link to Deployed Application
 
-## Link to Deployed Heroku
+## Link to Deployed Application (Heroku)
+https://afternoon-harbor-31606.herokuapp.com/
+
+## Link to GitHub Repository 
+https://github.com/BrockAtwood/NOTE-TAKER-FINAL-SUBMIT
