@@ -4,6 +4,9 @@ const fs = require("fs");
 //working with other files and directories
 const path = require("path");
 
+//random gnerator dependency
+const uuid = require("./helpers/uuid");
+
 //express app
 const app = express();
 //PORT boiler for heroku later, from previous activity #25/#26
